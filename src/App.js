@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.scss';
+
+import { LocationContext } from './LocationContext';
+
+import Home from './Pages/Home';
+import Location from './Pages/Location';
+
+import { BottomBar } from './Components';
+
+function App()
+{
+    const [ location, setLocation ] = useState({});
+
+    const value = { location, setLocation };
+
+    return (
+        <LocationContext.Provider value={ value }>
+            <div className="App">
+                <BrowserRouter>
+                    <Routes>
+                        <Route path="/" element={ <Home/> }/>
+                        <Route path="/location/:selected" element={ <Location/> }/>
+                    </Routes>
+
+                    <BottomBar/>
+                </BrowserRouter>
+            </div>
+        </LocationContext.Provider>
+    );
 }
 
 export default App;

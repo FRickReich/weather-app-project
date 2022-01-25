@@ -1,0 +1,54 @@
+.Footer
+{
+    padding: 5px; 
+    ul
+    {
+        list-style-type: none !important;
+        border-top: 1px solid rgba(141, 154, 166, 1);
+
+        li
+        {
+            font-size: 1em;
+            color: rgba(155, 166, 177, 1);
+            font-weight: bold;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(141, 154, 166, 1);
+            
+            .icon
+            {
+                float: right;
+            }
+
+            &:hover
+            {
+                cursor: pointer;
+                color: white;
+            }
+        }
+    }
+    .position
+    {
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        padding-top: 15px;
+    }
+    .social
+    {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 60px;
+        font-size: 2em;
+
+        a
+        {
+            color: rgba(155, 166, 177, 1);
+
+            &:hover
+            {
+                color: white;
+            }
+        }
+    }
+}
