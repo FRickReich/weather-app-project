@@ -1,6 +1,6 @@
 import './WindDirection.scss';
 
-const WindDirection = ({ speed, direction, degree }) =>
+const WindDirection = ({ speed, degree }) =>
 {
     return(
         <div className="WindDirection">

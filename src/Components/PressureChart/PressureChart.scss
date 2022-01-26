@@ -1,0 +1,107 @@
+.PressureChart
+{
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
+    background: rgba(90, 103, 115, 1);
+    position: relative;
+
+    .element
+    {
+        height: 2px;
+        width: 100px;
+        background: rgba(112, 128, 144, 1);
+        position: absolute;
+        top: 49px;
+    }
+
+    .circle
+    {
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        overflow: hidden;
+        position: relative;
+
+        .flow
+        {
+            z-index: 9;
+            background: linear-gradient(to right, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.5) 1%,rgba(255,255,255,0.25) 46%,rgba(255,255,255,0) 100%);
+            transform: rotate(55deg);
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            top: 18px;
+            right: -10px;
+        }
+    }
+
+    .safeline
+    {
+        width: 18px;
+        border-radius: 2px;
+        height: 4px;
+        background: white;
+        position: absolute;
+        top: 19px;
+        right: 7px;
+        transform: rotate(-42deg);
+        z-index: 1000;
+    }
+
+    .data
+    {
+        position: absolute;
+        width: 100px;
+        text-align: center;
+        top: 25px;
+        z-index: 2500;
+
+        .arrow
+        {
+            font-size: 1.2em;
+        }
+        .number
+        {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .subtitle
+        {
+
+        }
+    }
+
+    .mask
+    {
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        background: rgba(90, 103, 115, 1);;
+        top: 11px;
+        left: 10px;
+        border-radius: 50%;
+        z-index: 100
+    }
+    .mask2
+    {
+        background: rgba(90, 103, 115, 1);
+        height: 100px;
+        width: 100px;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 65px;
+    }
+    .arrows
+    {
+        width: 70px;
+        position: absolute;
+        left: 15px;
+        bottom: 0;
+
+        .right
+        {
+            float: right;
+        }
+    }
+}

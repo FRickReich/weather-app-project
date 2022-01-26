@@ -5,6 +5,8 @@ import Card from "../Card/Card";
 
 import { LocationContext } from './../../LocationContext';
 
+import PressureChart from '../PressureChart/PressureChart';
+
 const Pressure = () =>
 {
     const { location } = useContext(LocationContext);
@@ -15,7 +17,7 @@ const Pressure = () =>
             title="Luftdruck"
             icon={ faTachometerAlt }
         >
-            
+            <PressureChart data={ location.current.pressure_mb }/>
         </Card>
     );
 }

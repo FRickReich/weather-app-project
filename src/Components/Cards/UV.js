@@ -16,7 +16,7 @@ const UV = () =>
             title="UV-Index"
             icon={ faSun }
         >
-             <h1>
+            <h1>
                 { location.current.uv }
             </h1>
             <h3>

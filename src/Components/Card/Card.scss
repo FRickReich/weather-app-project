@@ -3,14 +3,16 @@
     color: white;
     background: rgba(90, 103, 115, 1);
     border-radius: 10px;
-    min-height: 140px;
+    min-height: 150px;
     padding-left: 10px;
     padding-right: 10px;
+    position: relative;
     padding-top: 10px;
     font-size: 0.8em;
     display: inline-block;
     margin-top: 5px;
     margin-bottom: 5px;
+    overflow: hidden;
 
     &.full
     {
@@ -62,7 +64,31 @@
         p
         {
             position: absolute;
+            font-size: 0.95em;
             bottom: 0;
+            z-index: 10000;
+        }
+        .info
+        {
+            padding-top: 10px;
+            display: block;
+        }
+        .bottomlink
+        {
+            width: 100%;
+            padding-top: 5px;
+            position: absolute;
+            bottom: -5px;
+            border-top: 1px solid rgba(141, 154, 166, 1);
+            color: white;
+            text-decoration: none;
+
+            .icon
+            {
+                float: right;
+                margin-top: 2px;
+                color: rgba(155, 166, 177, 1)
+            }
         }
         
     }
