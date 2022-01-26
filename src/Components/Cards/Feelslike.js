@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 
-import { faTemperatureLow } from "@fortawesome/free-solid-svg-icons";
+import { faTemperatureLow, faThermometerThreeQuarters } from "@fortawesome/free-solid-svg-icons";
 import Card from "../Card/Card";
 
 import { LocationContext } from './../../LocationContext';
@@ -13,7 +13,7 @@ const FeelsLike = () =>
         <Card
             size="half"
             title="Gefühlt"
-            icon={ faTemperatureLow }
+            icon={ faThermometerThreeQuarters }
         >
             <h1>
                 { location.current.feelslike_c.toFixed() }°

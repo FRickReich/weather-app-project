@@ -1,9 +1,9 @@
 import { useState, useEffect, useContext } from 'react';
-import './Overview.scss';
 
 import { CardGrid, Footer, Header, LoadingSpinner } from '../';
-
 import { LocationContext } from './../../LocationContext';
+
+import './Overview.scss';
 
 const apiKey = "32cf1fdd0c5c4deeb2b141821222401";
 

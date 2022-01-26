@@ -8,7 +8,7 @@ const Card = ({ children, size = "full", title, icon }) =>
         <div className={`Card ${ size }`}>
             <div className="title">
                 {
-                    icon && <><FontAwesomeIcon className="icon" icon={ icon } />&nbsp;&nbsp;&nbsp;</>
+                    icon && <><FontAwesomeIcon className="icon" icon={ icon } />&nbsp;&nbsp;</>
                 }
                 { title }
                 &nbsp;

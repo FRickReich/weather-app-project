@@ -2,7 +2,15 @@ import Card from '../Card/Card';
 import {
     Humidity, 
     Feelslike,
-    Distance
+    Distance,
+    Rain,
+    UV,
+    SunDown,
+    Wind,
+    Pressure,
+    TemperatureMap,
+    AirQuality,
+    ForeCast
 } from '../Cards/';
 
 import './CardGrid.scss';
@@ -15,21 +23,21 @@ const CardGrid = () =>
                 <Card size="full"></Card>
             </div>
             <div className="row">
-                <Card size="full"></Card>
+                <ForeCast/>
             </div>
             <div className="row">
-                <Card size="full"></Card>
+                <AirQuality/>
             </div>
             <div className="row">
-                <Card size="full"></Card>
+                <TemperatureMap/>
             </div>
             <div className="row">
-                <Card size="half"></Card>
-                <Card size="half"></Card>
+                <UV/>
+                <SunDown/>
             </div>
             <div className="row">
-                <Card size="half"></Card>
-                <Card size="half"></Card>
+                <Wind/>
+                <Rain/>
             </div>
             <div className="row">
                 <Feelslike/>
@@ -37,7 +45,7 @@ const CardGrid = () =>
             </div>
             <div className="row">
                 <Distance/>
-                <Card size="half"></Card>
+                <Pressure/>
             </div>
         </div>
     )

@@ -6,7 +6,7 @@ import './BottomBar.scss';
 
 const BottomBar = () =>
 {
-    const locations = ['berlin', 'bochum', 'hamburg', 'bremen'];
+    const locations = [ 'dortmund', 'berlin', 'bochum', 'gelsenkirchen' ];
 
     return(
         <div className="BottomBar">
