@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 
-import { faTemperatureLow, faThermometerThreeQuarters } from "@fortawesome/free-solid-svg-icons";
+import { faThermometerThreeQuarters } from "@fortawesome/free-solid-svg-icons";
 import Card from "../Card/Card";
 
 import { LocationContext } from './../../LocationContext';

@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 
-import { faSun, faTint } from "@fortawesome/free-solid-svg-icons";
+import { faSun } from "@fortawesome/free-solid-svg-icons";
 import Card from "../Card/Card";
 
 import { LocationContext } from './../../LocationContext';

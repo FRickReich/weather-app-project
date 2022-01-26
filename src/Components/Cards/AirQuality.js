@@ -1,17 +1,11 @@
-import { useContext } from 'react';
-
-import { faChevronRight, faDotCircle, faQuestion, faTemperatureLow, faThermometerThreeQuarters } from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight, faDotCircle } from "@fortawesome/free-solid-svg-icons";
 import Card from "../Card/Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-import { LocationContext } from './../../LocationContext';
 
 import UVChart from '../UVChart/UVChart';
 
 const AirQuality = () =>
 {
-    const { location } = useContext(LocationContext);
-
     return(
         <Card
             size="full"
@@ -25,7 +19,7 @@ const AirQuality = () =>
             <UVChart amount={ 12 } />
             <br />
             <br />
-            <a className="bottomlink" href="#">Mehr anzeigen <FontAwesomeIcon className="icon" icon={ faChevronRight } /></a>
+            <a className="bottomlink" href="/">Mehr anzeigen <FontAwesomeIcon className="icon" icon={ faChevronRight } /></a>
         </Card>
     );
 }

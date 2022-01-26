@@ -15,7 +15,7 @@ const Overview = ({ loc }) =>
 
     useEffect(() =>
     {
-        fetch(`http://api.weatherapi.com/v1/forecast.json?key=${ apiKey }&&q=${ loc }&days=10&aqi=yes&lang=de&alerts=no`)
+        fetch(`https://api.weatherapi.com/v1/forecast.json?key=${ apiKey }&&q=${ loc }&days=10&aqi=yes&lang=de&alerts=no`)
         .then(data => data.json())
         .then(json =>
         {
@@ -26,7 +26,7 @@ const Overview = ({ loc }) =>
                 console.log(json);
             }
         });
-    }, [ loc ]);
+    }, [ loc, setLocation ]);
 
     return(
         <div className="Overview">
