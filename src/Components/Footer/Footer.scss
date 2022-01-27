@@ -33,6 +33,16 @@
         font-weight: bold;
         color: white;
         padding-top: 15px;
+        font-size: 0.75em;
+        a
+        {
+            color: rgba(155, 166, 177, 1);
+
+            &:hover
+            {
+                color: white;
+            }
+        }
     }
     .social
     {

@@ -25,7 +25,7 @@ const Footer = () =>
                 </li>
             </ul>
             <p className="position">
-                Wetter für { location.location.name }
+                Powered by <a href="https://www.weatherapi.com/" title="Weather API">WeatherAPI.com</a>
             </p>
             <div className="social">
                 <a href="http://github.com/FRickReich/">
