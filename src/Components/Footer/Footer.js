@@ -1,6 +1,3 @@
-import { useContext } from 'react';
-
-import { LocationContext } from '../../LocationContext';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCommentAlt, faExternalLinkSquareAlt } from '@fortawesome/free-solid-svg-icons';
@@ -10,8 +7,6 @@ import './Footer.scss';
 
 const Footer = () =>
 {
-    const { location } = useContext(LocationContext);
-
     return(
         <div className="Footer">
             <ul>
